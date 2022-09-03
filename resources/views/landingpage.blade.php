@@ -33,7 +33,7 @@
                 <div class="container">
                     <div class="hero-inner">
                         <div class="hero-copy">
-                            <h1 class="hero-title mt-0">Laptop Store <br> Kecamatan</h1>
+                            <h1 class="hero-title mt-0">Laptop Store <br> Konoha</h1>
                             <p class="hero-paragraph">Beli Laptop Spek Dewa cuma disini</p>
                             <div class="hero-cta"><a class="button button-primary" href="/login">Log in</a><a
                                     class="button" href="/laptopstore">Kunjungi situs</a></div>
