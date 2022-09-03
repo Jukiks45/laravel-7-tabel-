@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+
+* {
+    font-family: 'Muli', sans-serif;
+}
+
+/* All */
+a {
+    text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    left: -275px;
+    width: 275px;
+    height: 100vh;
+    overflow-y: auto;
+    transition: 1s;
+}
+
+.sidebar-open {
+    left: 0;
+}
+
+.sidebar-header .close-sidebar-button {
+    display: none;
+}
+
+.sidebar-menu .nav-link {
+    font-size: 15px;
+}
+
+.sidebar-menu .active {
+    background-color: aliceblue;
+}
+
+.sidebar-menu .dropdown::after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9" style="fill:none;stroke:gray;stroke-width:1"></polyline></svg>');
+    position: absolute;
+    right: 15px;
+}
+
+.sidebar-menu .submenu .nav-item {
+    font-size: 14px;
+}
+
+.sidebar-menu .submenu .nav-item {
+    color: black;
+    transition: 0.3s;
+}
+
+.sidebar-menu .submenu .nav-item:hover {
+    color: grey;
+    margin-left: 5px;
+}
+
+.sidebar-menu .submenu-hidden {
+    display: none;
+}
+
+/* Main */
+.main {
+    margin-left: 275px;
+    height: 100vh;
+    transition: 1s;
+    overflow-x: hidden;
+}
+
+.main-full {
+    margin-left: 0px;
+}
+
+.main .nav-link {
+    font-size: 21px;
+}
+
+.main #avatar-image {
+    width: 35px;
+}
+
+.main #avatar-text {
+    font-size: 14px;
+}
+
+.main .main-data .graph-top .card-canvas {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+}
+
+.main .main-data .graph .card-canvas {
+    width: 100%;
+}
+
+.main .main-data .graph .card-canvas-portfolios {
+    height: 400px;
+}
+
+.main .main-data .graph .card-canvas .text-data {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .main-data .graph .card-canvas canvas {
+    height: 250px;
+}
+
+.main .main-data .activity-bar .col-item {
+    width: 10px;
+    height: 10px;
+    background-color: #DFEAF0;
+    padding: 10px;
+    margin-top: 11px;
+    border-radius: 15%;
+}
+
+.main .main-data .activity-bar .act-0 {
+    background-color: #DFEAF0;
+}
+
+.main .main-data .activity-bar .act-1 {
+    background-color: #B5E4FE;
+}
+
+.main .main-data .activity-bar .act-2 {
+    background-color: #2CB3FF;
+}
+
+.main .main-data .activity-bar .act-3 {
+    background-color: #2781B4;
+}
+
+/* Component Alert */
+.alert-close-button {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    color: #AAAAAA;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+.hidden {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+/* Component Badge */
+.badge {
+    border-radius: 20px;
+}
+
+/* Component Button */
+.btn {
+    border-radius: 7px;
+}
+
+/* Component Card */
+.card-img-top {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-img-full {
+    border-radius: 5px;
+}
+
+.text-img-full button {
+    bottom: 0;
+}
+
+.button-bottom-left {
+    bottom: 15px;
+    left: 15px;
+}
+
+.card-image-person {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+/* Component Navs */
+.nav .nav-link {
+    font-size: 15px;
+}
+
+/* Template Chatbox */
+.card .chatbox-profile-img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Error */
+.error-text {
+    font-size: 200px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 790px) {
+    .sidebar-header .close-sidebar-button {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        background: transparent;
+        border: none;
+        transition: 1s;
+        color: grey;
+    }
+
+    .sidebar-wrapper {
+        z-index: 10;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .main .main-data .graph .card-canvas-portfolios {
+        height: 400px;
+    }
+
+    .main .main-data .graph .card-canvas .text-data{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+
+}
+
+/* Colors */
+.color-primary-spatu {
+    background-color: #3b89ff;
+    color: white;
+}
+
+.color-primary-spatu:hover {
+    background-color: #0066ff;
+    color: white;
+}
+
+.color-primary-spatu:focus {
+    box-shadow: 0 0 0 .25rem #89b8ff;
+}
+
+.color-danger-spatu {
+    background-color: rgba(255, 87, 2, 0.7);
+    color: white;
+}
+
+.color-danger-spatu:hover {
+    background-color: rgba(255, 87, 2, 1);
+    color: white;
+}
+
+.color-danger-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(253, 149, 97, 0.7);;
+}
+
+.color-warning-spatu {
+    background-color: rgba(255, 191, 0, 0.7);
+    color: black;
+}
+
+.color-warning-spatu:hover {
+    background-color: rgba(255, 191, 0, 1);
+    color: black;
+}
+
+.color-warning-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 221, 119, 0.7);
+}
+
+.color-success-spatu {
+    background-color: rgba(45, 194, 0, 0.7);
+    color: white;
+}
+
+.color-success-spatu:hover {
+    background-color:rgba(60, 255, 0, 0.7);
+    color: white;
+}
+
+.color-success-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(141, 255, 106, 0.7);
+}
+
+.color-info-spatu {
+    background-color: rgba(11, 162, 255, 0.7);
+    color: white;
+}
+
+.color-info-spatu:hover {
+    background-color: rgba(11, 162, 255, 1);
+    color: white;
+}
+
+.color-info-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(119, 203, 255, 0.7);
+}
+
+.color-secondary-spatu {
+    background-color: rgba(221, 221, 221, 0.7);
+    color: #333333;
+}
+
+.color-secondary-spatu:hover {
+    background-color: rgba(221, 221, 221, 1);
+    color: #333333;
+}
+
+.color-secondary-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(138, 138, 138, 0.7);
+}
+
+.color-light-spatu {
+    background-color: rgba(220, 220, 220, 0.7);
+    color: #000000;
+}
+
+.color-light-spatu:hover {
+    background-color: rgba(220, 220, 220, 1);
+
+    color: #000000;
+}
+
+.color-light-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(220, 220, 220, 0.7);
+}
+
+.color-dark-spatu {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.color-dark-spatu:hover {
+    background-color: rgba(34, 34, 34, 1);
+    color: white;
+}
+
+.color-dark-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(138, 138, 138, 0.7);
+}
+
+.color-brand-light-spatu {
+    background-color: #b5e4fe;
+}
+
+.color-brand-normal-spatu {
+    background-color: #2cb3ff;
+}
+
+.color-brand-dark-spatu {
+    background-color: #2781b4;
+}
+
+.outline-primary-spatu {
+    background-color: transparent;
+    border-color: #3b89ff;
+    color: #3b89ff;
+}
+
+.outline-primary-spatu:hover {
+    background-color: #3b89ff;
+    color: white;
+}
+
+.outline-primary-spatu:focus {
+    box-shadow: 0 0 0 .25rem #89b8ff;
+}
+
+.outline-danger-spatu {
+    background-color: transparent;
+    border-color: rgba(255, 87, 2, 0.7);
+    color: rgba(255, 87, 2, 0.7);
+}
+
+.outline-danger-spatu:hover {
+    background-color: rgba(255, 87, 2, 0.7);
+    color: white;
+}
+
+.outline-danger-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(253, 149, 97, 0.7);;
+}
+
+.outline-warning-spatu {
+    background-color: transparent;
+    border-color: rgba(255, 191, 0, 0.7);
+    color: rgba(255, 191, 0, 0.7);;
+}
+
+.outline-warning-spatu:hover {
+    background-color: rgba(255, 191, 0, 1);;
+    color: white;
+}
+
+.outline-warning-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 221, 119, 0.7);
+}
+
+.outline-success-spatu {
+    background-color: transparent;
+    border-color: rgba(45, 194, 0, 0.7);
+    color: rgba(45, 194, 0, 0.7);
+}
+
+.outline-success-spatu:hover {
+    background-color: rgba(60, 255, 0, 0.7);
+    color: white;
+}
+
+.outline-success-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(141, 255, 106, 0.7);
+}
+
+.outline-info-spatu {
+    background-color: transparent;
+    border-color: rgba(11, 162, 255, 0.7);
+    color:  rgba(11, 162, 255, 0.7);;
+}
+
+.outline-info-spatu:hover {
+    background-color: rgba(11, 162, 255, 1);
+    color: white;
+}
+
+.outline-info-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(119, 203, 255, 0.7);
+}
+
+.outline-secondary-spatu {
+    background-color: transparent;
+    border-color: rgba(146, 146, 146, 0.7);
+    color: rgba(146, 146, 146, 0.7);
+}
+
+.outline-secondary-spatu:hover {
+    background-color: rgba(146, 146, 146, 1);
+    color: black;
+}
+
+.outline-secondary-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(138, 138, 138, 0.7);
+}
+
+.outline-light-spatu {
+    background-color: transparent;
+    border-color: rgba(220, 220, 220, 0.7);
+    color: rgba(220, 220, 220, 0.7);
+}
+
+.outline-light-spatu:hover {
+    background-color: rgba(220, 220, 220, 1);
+    color: black;
+}
+
+.outline-light-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(220, 220, 220, 0.7);
+}
+
+.outline-dark-spatu {
+    background-color: transparent;
+    border-color: rgba(34, 34, 34, 0.7);
+    color: rgba(34, 34, 34, 0.7);
+}
+
+.outline-dark-spatu:hover {
+    background-color:rgba(34, 34, 34, 1);
+    color: white;
+}
+
+.outline-dark-spatu:focus {
+    box-shadow: 0 0 0 .25rem rgba(138, 138, 138, 0.7);
+}
