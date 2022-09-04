@@ -20,7 +20,7 @@
             <div class="col-11 col-sm-8 col-lg-6 mx-auto">
                 <div class="card rounded border-0 shadow mx-1 my-4 p-3">
                     <div class="text-center my-5">
-                        <h4>Sign in</h4>
+                        <h4>masuk</h4>
                         {{-- <p class="text-muted">Sign In to view more content</p> --}}
                         <form action="/loginpost" method="POST">
                         @csrf
